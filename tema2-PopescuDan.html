@@ -1,0 +1,45 @@
+<script>
+  //1
+  let a = 5;
+  let b = 6;
+
+  if (a > b) {
+    console.log("Numarul a este mai mare decat b");
+  } else if (a < b) {
+    console.log("Nu este indeplinita conditia a>b");
+  }
+  //2 -> Nu sunt sigur
+
+  masini = ["bmw", "dacia", "mercedes", "lancia"];
+
+  for (i = 0; i < 4; i++) {
+    console.log("Masina cu numarul 1 este bmw.");
+    console.log("Masina cu numarul 2 este dacia.");
+    console.log("Masina cu numarul 3 este mercedes.");
+    console.log("Masina cu numarul 4 este lancia.");
+  }
+  //3
+
+  let c = 3;
+  let d = 7;
+  let e = c * d;
+  function produs(c, d) {
+    console.log("Produsul numerelor este " + e + ".");
+  }
+
+  produs(e);
+
+  //4
+  function datePersoana(nume, sex) {
+    let a;
+    if (sex === true) {
+      a = "doamna ";
+    } else {
+      a = "domnul ";
+    }
+
+    console.log("Salut " + a + nume);
+  }
+  datePersoana("Radu", false);
+  datePersoana("Amalia", true);
+</script>
