@@ -29,7 +29,62 @@
       stradaGaraj: "Ion Creanga",
       ocupat: false,
     },
+    salut: function () {
+      // console.log("Salut sunt masina ta");
+    },
   };
+  masina.salut();
 
-  console.log(masina.garaj.stradaGaraj);
+  a = 3;
+
+  b = 2;
+
+  c = 5;
+
+  if (a > b) {
+    //console.log("IF1");
+  } else if (c > b) {
+    //console.log("IF2");
+  } else {
+    //console.log("IF3");
+  }
+
+  //console.log(masina.garaj.stradaGaraj);
+
+  animale = ["leu", "pisica", "caprioara"];
+
+  for (i = 0; i < 3; i++) {
+    //console.log("Animal" + animale[i]);
+    //console.log("Animal" + animale[i]);
+  }
+
+  //function salut(n) {
+  //console.log("Salut " + n);
+  //}
+  //salut("Radu");
+
+  function impartire(a, b) {
+    // console.log("Impartirea e = " + a / b);
+  }
+
+  function datePersonale(nume, varsta, angajat) {
+    let a;
+    if (angajat === true) {
+      a = "angajat";
+    } else {
+      a = "somer";
+    }
+
+    // console.log(nume + "are varsta de " + varsta + "de ani si este " + a);
+  }
+  datePersonale("Radu", 30, true);
+  datePersonale("Vlad", 29, false);
+
+  function afisareMasini(x) {
+    for (i = 0; i < x.length; i++) {
+      console.log(x[i]);
+    }
+  }
+  afisareMasini(["BMW", "Audi", "Seat"]);
+  afisareMasini(["BMW", "Audi", "Seat", "Dacia"]);
 </script>
