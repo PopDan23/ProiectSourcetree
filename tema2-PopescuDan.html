@@ -8,38 +8,28 @@
   } else if (a < b) {
     console.log("Nu este indeplinita conditia a>b");
   }
-  //2 -> Nu sunt sigur
+  //2 -> atentie la i+1 din console.log
 
   masini = ["bmw", "dacia", "mercedes", "lancia"];
 
   for (i = 0; i < 4; i++) {
-    console.log("Masina cu numarul 1 este bmw.");
-    console.log("Masina cu numarul 2 este dacia.");
-    console.log("Masina cu numarul 3 este mercedes.");
-    console.log("Masina cu numarul 4 este lancia.");
+    console.log("Masina cu numarul " + (i + 1) + " este " + masini[i] + ".");
   }
   //3
 
-  let c = 3;
-  let d = 7;
-  let e = c * d;
-  function produs(c, d) {
-    console.log("Produsul numerelor este " + e + ".");
+  function produs(a, b) {
+    console.log("Produsul numerelor este " + a * b + ".");
   }
-
-  produs(e);
+  produs(5, 9);
 
   //4
-  function datePersoana(nume, sex) {
-    let a;
-    if (sex === true) {
-      a = "doamna ";
+  function datePersonale(nume, sex) {
+    if (sex === "m") {
+      console.log("Salut domnul " + nume + ".");
     } else {
-      a = "domnul ";
+      console.log("Salut doamna " + nume + ".");
     }
-
-    console.log("Salut " + a + nume);
   }
-  datePersoana("Radu", false);
-  datePersoana("Amalia", true);
+  datePersonale("Marius", "m");
+  datePersonale("Amalia", "f");
 </script>
